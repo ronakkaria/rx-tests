@@ -1,5 +1,6 @@
 package ronak.apps.tdd;
 
+import android.util.Log;
 import android.widget.TextView;
 
 import rx.Observer;
@@ -14,14 +15,12 @@ public class TextViewObserver implements Observer<String> {
 
 	@Override
 	public void onCompleted() {
-		// TODO Auto-generated method stub
-		
+		tv.setText(tv.getText().toString() + " Completed");
 	}
 
 	@Override
 	public void onError(Throwable arg0) {
-		// TODO Auto-generated method stub
-		
+		Log.d("onError", "Error thrown" + arg0.getMessage());
 	}
 
 	@Override

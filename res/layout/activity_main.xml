@@ -31,4 +31,32 @@
         android:layout_height="wrap_content"
         android:text="bye_world" />
     
+    <TextView
+        android:id="@+id/random_text"
+        android:layout_below="@id/tv"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bye_world" />
+    
+    <TextView 
+        android:id="@+id/flat_map_text"
+        android:layout_below="@id/random_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bye_world" />
+    
+    <TextView 
+        android:id="@+id/combineLatestText"
+        android:layout_toLeftOf="@id/flat_map_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="combining latest" />
+    
+    <Spinner
+        android:id="@+id/list_view"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/combineLatestText" />
+    
 </RelativeLayout>

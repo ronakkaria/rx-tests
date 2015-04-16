@@ -28,7 +28,7 @@ public class ObservableEditText extends EditText {
 	
 	public Observable<OnTextChangeEvent> getObservable() {
 		if (mObservable == null)
-			mObservable = WidgetObservable.text(this, true);
+			mObservable = WidgetObservable.text(this);
 		return mObservable;
 	}
 	
